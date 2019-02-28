@@ -13,6 +13,7 @@ ReactDOM.render(
   <Router>
     <>
       <Route path="/" component={Home} exact />
+      <Route path="/apply-now" component={(): any => { window.location.replace('https://www.rhris.com/applynow.cfm?siteID=26756A'); return null; }} />
     </>
   </Router>,
   document.getElementById('app')

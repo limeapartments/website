@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
+import { Link } from 'react-router-dom';
+import MouseoverLink from './components/MouseoverLink';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -61,7 +63,71 @@ export default class Home extends React.Component {
                   <img src={require('../static/images/facebook-icon.png')} />
                 </a>
               </div>
-              <div style={{ height: 60, width: '100%', backgroundColor: '#DB3FA8', opacity: 0.6 }}>
+              <div style={{
+                height: 60,
+                width: '100%',
+                backgroundColor: 'rgba(219, 63, 168, 0.6)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-around',
+                paddingHorizontal: 200
+              }}>
+                <MouseoverLink
+                  to="/amenities"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Amenities
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/experience"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Experience
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/location"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Location
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/floor-plans"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Floor Plans
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/gallery"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Gallery
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/residents"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Residents
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/contact"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Contact
+                </MouseoverLink>
+                <MouseoverLink
+                  to="/apply-now"
+                  activeColor="black"
+                  inactiveColor="white"
+                >
+                  Apply Now
+                </MouseoverLink>
               </div>
             </div>
           </Carousel>
