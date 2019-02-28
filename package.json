@@ -19,6 +19,22 @@
     "url": "https://github.com/limeapartments/website/issues"
   },
   "homepage": "https://github.com/limeapartments/website#readme",
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "extraFileExtensions": [
+        ".tsx"
+      ],
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "useJSXTextNode": true,
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "@jchancehud/eslint-config"
+    ]
+  },
   "dependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
@@ -29,11 +45,15 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@jchancehud/eslint-config": "0.0.8",
     "@types/react": "^16.8.5",
     "@types/react-dom": "^16.8.2",
     "@types/react-router-dom": "^4.3.1",
     "@types/styled-components": "^4.1.11",
+    "@typescript-eslint/parser": "^1.4.2",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^5.14.1",
     "file-loader": "^3.0.1",
     "html-webpack-harddisk-plugin": "^1.0.1",
     "html-webpack-inline-source-plugin": "0.0.10",
