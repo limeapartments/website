@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
+import ProgressBar from './components/ProgressBar';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -19,7 +20,7 @@ const TitleDiv = styled.div`
 const SubtitleDiv = styled.div`
   color: white;
   font-family: 'Sanchez';
-  font-size: 20px;
+  font-size: 24px;
   padding-bottom: 20px;
 `;
 
@@ -111,6 +112,17 @@ export default class Home extends React.Component {
           </div>
         </BlackStriped>
         <SectionImageDiv image={require('../static/images/home-background-section2.jpg')}>
+          <TitleDiv>
+            UPTOWN
+          </TitleDiv>
+          <SubtitleDiv>
+            THE LYN-LAKE LYFESTYLE
+          </SubtitleDiv>
+          <ProgressBar color="#00ffcc" percent={0.5} title="shopping" />
+          <ProgressBar color="#ff00ff" percent={0.63} title="arts & entertainment" />
+          <ProgressBar color="#fffa61" percent={0.75} title="bars & restaurants" />
+          <ProgressBar color="#ff612a" percent={0.87} title="lakes & bikes" />
+          <ProgressBar color="#ffffff" percent={1} title="awesome!" />
         </SectionImageDiv>
         <SectionImageDiv image={require('../static/images/home-background-section3.jpg')}>
           <TitleDiv>
