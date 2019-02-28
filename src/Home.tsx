@@ -8,6 +8,18 @@ const BlackStriped = styled.div`
   width: 100%;
 `;
 
+const TitleDiv = styled.div`
+  color: white;
+  font-family: 'Amatic SC';
+  font-size: 50px;
+`;
+
+const SubtitleDiv = styled.div`
+  color: white;
+  font-family: 'Sanchez';
+  font-size: 20px;
+`;
+
 export default class Home extends React.Component {
   render() {
     return (
@@ -20,15 +32,17 @@ export default class Home extends React.Component {
             require('../static/images/home-header3.jpg'),
           ]}>
             <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}>
-              <a href="https://limeapartments.com">
-                <img src={require('../static/images/lime-logo.png')} />
-              </a>
-              <div>
-                REFRESHING APARTMENTS
+              <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around'}}>
+                <a href="https://limeapartments.com">
+                  <img src={require('../static/images/lime-logo.png')} />
+                </a>
+                <TitleDiv>
+                  REFRESHING APARTMENTS
+                </TitleDiv>
+                <a href="https://www.facebook.com/pages/Lime-Apartments/389529864487875?skip_nax_wizard=true">
+                  <img src={require('../static/images/facebook-icon.png')} />
+                </a>
               </div>
-              <a href="https://www.facebook.com/pages/Lime-Apartments/389529864487875?skip_nax_wizard=true">
-                <img src={require('../static/images/facebook-icon.png')} />
-              </a>
               <div style={{ height: 60, width: '100%', backgroundColor: '#DB3FA8', opacity: 0.6 }}>
               </div>
             </div>
@@ -39,23 +53,26 @@ export default class Home extends React.Component {
           backgroundSize: 'cover',
           backgroundPosition: 'bottom',
           height: 500,
-          width: '100%'
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
         }}>
-          <div>
+          <TitleDiv style={{ paddingTop: 100}}>
             LUXURY SCHMUXURY
-          </div>
-          <div>
+          </TitleDiv>
+          <SubtitleDiv>
             WHAT'S A NICE PROPERTY WITHOUT NICE PEOPLE?
-          </div>
+          </SubtitleDiv>
         </div>
         <BlackStriped>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
-            <div>
+            <TitleDiv>
               LIME APARTMENTS
-            </div>
-            <div>
+            </TitleDiv>
+            <SubtitleDiv>
               A LITTLE TART. A LITTLE TANGY. NEVER BORING.
-            </div>
+            </SubtitleDiv>
           </div>
         </BlackStriped>
         <div style={{
@@ -68,12 +85,12 @@ export default class Home extends React.Component {
         </div>
         <BlackStriped>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
-            <div>
+            <TitleDiv>
               WANNA CHAT?
-            </div>
-            <div>
+            </TitleDiv>
+            <SubtitleDiv>
               DROP BY AND SAY HI...
-            </div>
+            </SubtitleDiv>
           </div>
         </BlackStriped>
         <div style={{
@@ -89,15 +106,25 @@ export default class Home extends React.Component {
           backgroundSize: 'cover',
           backgroundPosition: 'bottom',
           height: 500,
-          width: '100%'
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
         }}>
-          <div>
+          <TitleDiv>
             THE VIEW FROM THE LIME TERRACE
-          </div>
-          <div>
+          </TitleDiv>
+          <SubtitleDiv>
             DOWNTOWN MINNEAPOLIS
-          </div>
+          </SubtitleDiv>
         </div>
+        <BlackStriped>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+            <TitleDiv>
+              PUCKER UP
+            </TitleDiv>
+          </div>
+        </BlackStriped>
       </>
     );
   }
