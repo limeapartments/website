@@ -20,6 +20,7 @@ const SubtitleDiv = styled.div`
   color: white;
   font-family: 'Sanchez';
   font-size: 20px;
+  padding-bottom: 20px;
 `;
 
 const SectionImageDiv = styled.div<{ image: string}>`
@@ -90,6 +91,13 @@ export default class Home extends React.Component {
             <SubtitleDiv>
               CONNECT WITH LIME ON FACEBOOK
             </SubtitleDiv>
+            <div class="fb-page" data-href="https://www.facebook.com/Lime-Apartments-389529864487875/" data-width="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Lime-Apartments-389529864487875/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/Lime-Apartments-389529864487875/">
+                  Lime Apartments
+                </a>
+              </blockquote>
+            </div>
           </div>
         </SectionImageDiv>
         <BlackStriped>
