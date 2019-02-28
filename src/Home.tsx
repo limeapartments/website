@@ -13,12 +13,27 @@ const TitleDiv = styled.div`
   color: white;
   font-family: 'Amatic SC';
   font-size: 50px;
+  padding-top: 100px;
 `;
 
 const SubtitleDiv = styled.div`
   color: white;
   font-family: 'Sanchez';
   font-size: 20px;
+`;
+
+const SectionImageDiv = styled.div<{ image: string}>`
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ), url(${props => props.image});
+  background-size: cover;
+  background-position: bottom;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export default class Home extends React.Component {
@@ -49,23 +64,14 @@ export default class Home extends React.Component {
             </div>
           </Carousel>
         </div>
-        <div style={{
-          backgroundImage: `url(${require('../static/images/home-background-section0.jpg')})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom',
-          height: 500,
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'
-        }}>
-          <TitleDiv style={{ paddingTop: 100}}>
+        <SectionImageDiv image={require('../static/images/home-background-section0.jpg')}>
+          <TitleDiv>
             LUXURY SCHMUXURY
           </TitleDiv>
           <SubtitleDiv>
             WHAT'S A NICE PROPERTY WITHOUT NICE PEOPLE?
           </SubtitleDiv>
-        </div>
+        </SectionImageDiv>
         <BlackStriped>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
             <TitleDiv>
@@ -76,14 +82,16 @@ export default class Home extends React.Component {
             </SubtitleDiv>
           </div>
         </BlackStriped>
-        <div style={{
-          backgroundImage: `url(${require('../static/images/home-background-section1.jpg')})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom',
-          height: 500,
-          width: '100%'
-        }}>
-        </div>
+        <SectionImageDiv image={require('../static/images/home-background-section1.jpg')}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+            <TitleDiv>
+              GET SOCIAL
+            </TitleDiv>
+            <SubtitleDiv>
+              CONNECT WITH LIME ON FACEBOOK
+            </SubtitleDiv>
+          </div>
+        </SectionImageDiv>
         <BlackStriped>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
             <TitleDiv>
@@ -94,31 +102,16 @@ export default class Home extends React.Component {
             </SubtitleDiv>
           </div>
         </BlackStriped>
-        <div style={{
-          backgroundImage: `url(${require('../static/images/home-background-section2.jpg')})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom',
-          height: 500,
-          width: '100%'
-        }}>
-        </div>
-        <div style={{
-          backgroundImage: `url(${require('../static/images/home-background-section3.jpg')})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom',
-          height: 500,
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'
-        }}>
+        <SectionImageDiv image={require('../static/images/home-background-section2.jpg')}>
+        </SectionImageDiv>
+        <SectionImageDiv image={require('../static/images/home-background-section3.jpg')}>
           <TitleDiv>
             THE VIEW FROM THE LIME TERRACE
           </TitleDiv>
           <SubtitleDiv>
             DOWNTOWN MINNEAPOLIS
           </SubtitleDiv>
-        </div>
+        </SectionImageDiv>
         <BlackStriped>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
             <TitleDiv>
