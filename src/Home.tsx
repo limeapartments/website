@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from './components/Carousel';
+import Footer from './components/Footer';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -125,6 +126,7 @@ export default class Home extends React.Component {
             </TitleDiv>
           </div>
         </BlackStriped>
+        <Footer />
       </>
     );
   }
