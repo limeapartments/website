@@ -66,7 +66,7 @@ export default class Home extends React.Component {
               <div style={{
                 height: 60,
                 width: '100%',
-                backgroundColor: 'rgba(219, 63, 168, 0.6)',
+                backgroundColor: 'rgba(219, 63, 168, 0.7)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-around',
