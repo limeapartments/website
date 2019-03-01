@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
 import MouseoverLink from './components/MouseoverLink';
 import ImageGrid from './components/ImageGrid';
+import { Link } from 'react-router-dom';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -38,6 +39,11 @@ const SectionImageDiv = styled.div<{ image: string}>`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const GreenLink = styled(Link)`
+  color: #00ff22;
+  text-decoration: none;
 `;
 
 export default class Home extends React.Component {
@@ -203,7 +209,7 @@ export default class Home extends React.Component {
           </div>
         </SectionImageDiv>
         <BlackStriped>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <TitleDiv>
               WANNA CHAT?
             </TitleDiv>
@@ -248,11 +254,48 @@ export default class Home extends React.Component {
           </SubtitleDiv>
         </SectionImageDiv>
         <BlackStriped>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <TitleDiv>
               PUCKER UP
             </TitleDiv>
+            <div style={{ margin: 20, textAlign: 'center', color: 'white', fontFamily: 'Open Sans, Muli', fontSize: 17 }}>
+              <p>
+                Looking for an apartment community offering valuable <GreenLink to="/amenities">amenities</GreenLink>? <strong><em>Check.</em></strong>
+              </p>
+              <p>
+              In a prime Minneapolis <GreenLink to="/location">location</GreenLink>? <strong><em>Check.</em></strong>
+              </p>
+              <p>
+                With open <GreenLink to="/floor-plans">floor plans</GreenLink> that maximize space, pay attention to detail and provide natural lighting? <strong><em>Check.</em></strong>
+              </p>
+              <p>
+                Filled with fun-loving <GreenLink to="/residents">residents</GreenLink> you'd like to meet? <strong><em>Check.</em></strong>
+              </p>
+              <p>
+                Scope out our <GreenLink to="/gallery">gallery</GreenLink> for some more eye-candy, then <GreenLink to="/contact">contact us</GreenLink> to find out more.
+              </p>
+            </div>
+            <Link
+              to="/contact"
+              style={{
+                backgroundColor: 'white',
+                borderRadius: 20,
+                paddingLeft: 16,
+                paddingRight: 16,
+                paddingTop: 8,
+                paddingBottom: 8,
+                margin: 8,
+                fontFamily: 'Poppins',
+                fontWeight: 600,
+                fontSize: 20,
+                color: 'black',
+                textDecoration: 'none'
+              }}
+            >
+              SCHEDULE AN APPOINTMENT
+            </Link>
           </div>
+          <div style={{ height: 100 }} />
         </BlackStriped>
         <Footer />
       </>
