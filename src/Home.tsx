@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
-import { Link } from 'react-router-dom';
 import MouseoverLink from './components/MouseoverLink';
+import ImageGrid from './components/ImageGrid';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -148,7 +148,42 @@ export default class Home extends React.Component {
             <SubtitleDiv>
               A LITTLE TART. A LITTLE TANGY. NEVER BORING.
             </SubtitleDiv>
+            <ImageGrid data={[
+              {
+                image: require('../static/images/home-grid1.jpg'),
+                text: 'Steamy Sauna',
+              },
+              {
+                image: require('../static/images/home-grid2.jpg'),
+                text: 'Midtown Greenway',
+              },
+              {
+                image: require('../static/images/home-grid3.jpg'),
+                text: 'Gym-quality Fitness',
+              },
+              {
+                image: require('../static/images/home-grid4.jpg'),
+                text: 'Fun Events',
+              },
+              {
+                image: require('../static/images/home-grid5.jpg'),
+                text: 'Pool Anyone?',
+              },
+              {
+                image: require('../static/images/home-grid6.jpg'),
+                text: 'We Love Our Pups',
+              },
+              {
+                image: require('../static/images/home-grid7.jpg'),
+                text: 'Splash Deck',
+              },
+              {
+                image: require('../static/images/home-grid8.jpg'),
+                text: 'Outdoor Spaces',
+              },
+            ]} />
           </div>
+          <div style={{ height: 100 }} />
         </BlackStriped>
         <SectionImageDiv image={require('../static/images/home-background-section1.jpg')}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
