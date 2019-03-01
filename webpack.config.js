@@ -1,7 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
 module.exports = {
   mode: 'development',
@@ -36,12 +34,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'static/index.ejs',
-      filename: '../static/index.html',
-      inlineSource: '.(js|css)$',
-      alwaysWriteToDisk: true
+      filename: 'index.html',
     }),
-    new HtmlWebpackInlineSourcePlugin(),
-    new HtmlWebpackHarddiskPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'static'),
