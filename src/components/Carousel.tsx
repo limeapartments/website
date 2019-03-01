@@ -25,14 +25,20 @@ export default class Carousel extends React.Component<{
   render() {
     return (
       <div style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${this.props.images[this.state.imageIndex]})`,
+        backgroundImage: `url(${this.props.images[this.state.imageIndex]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'bottom',
+        backgroundRepeat: 'no-repeat',
         height: 'inherit',
-        width: '100%',
-        objectFit: 'cover',
+        width: '100%'
       }}>
-        {this.props.children}
+        <div style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.3)'
+        }}>
+          {this.props.children}
+        </div>
       </div>
     );
   }
