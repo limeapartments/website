@@ -7,8 +7,7 @@
     "clean": "rm -rf ./build || true",
     "build": "npm run clean && webpack",
     "dev": "webpack-dev-server --config webpack.config.js",
-    "build:production": "webpack --config webpack.prod.js",
-    "build:docs": "npm run build:production && cp -r static/ docs/",
+    "build:production": "npm run clean && webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
