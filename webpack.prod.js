@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'static/index.ejs',
-      filename: '../static/index.html',
+      filename: 'index.html',
       inlineSource: '.(js|css)$',
       alwaysWriteToDisk: true
     }),
