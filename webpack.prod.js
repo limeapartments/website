@@ -25,8 +25,14 @@ module.exports = {
           'file-loader',
           {
             loader: 'image-webpack-loader',
-          }
-        ]
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 85
+              },
+            },
+          },
+        ],
       },
     ],
   },
