@@ -1,3 +1,18 @@
 {
-  "alias": ["limeapartments.com"]
+  "alias": ["limeapartments.com", "www.limeapartments.com"],
+  "version": 2,
+  "name": "limeapartments",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": ".(js|gif|png|jpe?g|svg|ico)$" }
+  ]
 }
