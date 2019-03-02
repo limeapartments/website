@@ -20,12 +20,14 @@ export default () => (
     ]}>
       <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}>
         <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around'}}>
-          <a href="https://limeapartments.com">
-            <img src={require('../../static/images/lime-logo.png')} />
-          </a>
-          <TitleDiv>
-            REFRESHING APARTMENTS
-          </TitleDiv>
+          <div>
+            <a href="https://limeapartments.com">
+              <img src={require('../../static/images/lime-logo.png')} />
+            </a>
+            <TitleDiv style={{ paddingTop: 20 }}>
+              REFRESHING APARTMENTS
+            </TitleDiv>
+          </div>
           <a href="https://www.facebook.com/pages/Lime-Apartments/389529864487875?skip_nax_wizard=true">
             <img src={require('../../static/images/facebook-icon.png')} />
           </a>
