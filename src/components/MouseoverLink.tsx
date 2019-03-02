@@ -20,7 +20,10 @@ export default class MouseoverLink extends React.Component<{
           textDecoration: 'none',
           textTransform: 'uppercase',
           fontFamily: 'Abel',
-          fontSize: 20
+          fontSize: 20,
+          marginLeft: 4,
+          marginRight: 4,
+          ...(this.props.style || {})
         }}
         onMouseEnter={() => this.setState({ active: true })}
         onMouseLeave={() => this.setState({ active: false })}
