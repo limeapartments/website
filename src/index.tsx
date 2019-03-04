@@ -5,6 +5,7 @@ import Home from './Home';
 import Amenities from './Amenities';
 import Residents from './Residents';
 import Gallery from './Gallery';
+import Experience from './Experience';
 
 Object.assign(document.body.style, {
   'margin': 'auto',
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path="/amenities" component={Amenities} />
       <Route path="/residents" component={Residents} />
       <Route path="/gallery" component={Gallery} />
+      <Route path="/experience" component={Experience} />
       <Route path="/apply-now" component={(): any => { window.location.replace('https://www.rhris.com/applynow.cfm?siteID=26756A'); return null; }} />
     </>
   </Router>,
