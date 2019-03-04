@@ -43,6 +43,9 @@ module.exports = {
     publicPath: '/',
     compress: true,
     historyApiFallback: {
+      rewrites: [
+        { from: /^\/[A-Za-z]+$/, to: '/index.html' }
+      ],
       index: 'index.html',
     },
   },
