@@ -8,40 +8,8 @@ import ImageGrid from './components/ImageGrid';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import WhiteButton from './components/WhiteButton';
-const BlackStripes = require('../static/images/blackstripes.jpg');
-
-const BlackStriped = styled.div`
-  background-image: url(${BlackStripes});
-  width: 100%;
-`;
-
-const TitleDiv = styled.div`
-  color: white;
-  font-family: 'Amatic SC';
-  font-size: 50px;
-  padding-top: 100px;
-`;
-
-const SubtitleDiv = styled.div`
-  color: white;
-  font-family: 'Sanchez';
-  font-size: 24px;
-  padding-bottom: 20px;
-`;
-
-const SectionImageDiv = styled.div<{ image: string}>`
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ), url(${props => props.image});
-  background-size: cover;
-  background-position: bottom;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import BlackStriped from './components/BlackStriped';
+import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex } from './components/Shared';
 
 const GreenLink = styled(Link)`
   color: #00ff22;
@@ -52,15 +20,17 @@ export default () => (
   <>
     <Header />
     <SectionImageDiv image={require('../static/images/home-background-section0.jpg')}>
-      <TitleDiv>
-        LUXURY SCHMUXURY
-      </TitleDiv>
-      <SubtitleDiv>
-        WHAT'S A NICE PROPERTY WITHOUT NICE PEOPLE?
-      </SubtitleDiv>
+      <VFlex>
+        <TitleDiv>
+          LUXURY SCHMUXURY
+        </TitleDiv>
+        <SubtitleDiv>
+          WHAT'S A NICE PROPERTY WITHOUT NICE PEOPLE?
+        </SubtitleDiv>
+      </VFlex>
     </SectionImageDiv>
     <BlackStriped>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+      <VFlex>
         <TitleDiv>
           LIME APARTMENTS
         </TitleDiv>
@@ -101,11 +71,10 @@ export default () => (
             text: 'Outdoor Spaces',
           },
         ]} />
-      </div>
-      <div style={{ height: 100 }} />
+      </VFlex>
     </BlackStriped>
     <SectionImageDiv image={require('../static/images/home-background-section1.jpg')}>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 40 }}>
+      <VFlex>
         <TitleDiv>
           GET SOCIAL
         </TitleDiv>
@@ -119,10 +88,10 @@ export default () => (
             </a>
           </blockquote>
         </div>
-      </div>
+      </VFlex>
     </SectionImageDiv>
     <BlackStriped>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <VFlex>
         <TitleDiv>
           WANNA CHAT?
         </TitleDiv>
@@ -143,31 +112,35 @@ export default () => (
             height="450"
           />
         </div>
-      </div>
+      </VFlex>
     </BlackStriped>
     <SectionImageDiv image={require('../static/images/home-background-section2.jpg')}>
-      <TitleDiv>
-        UPTOWN
-      </TitleDiv>
-      <SubtitleDiv>
-        THE LYN-LAKE LYFESTYLE
-      </SubtitleDiv>
-      <ProgressBar color="#00ffcc" percent={0.5} title="shopping" />
-      <ProgressBar color="#ff00ff" percent={0.63} title="arts & entertainment" />
-      <ProgressBar color="#fffa61" percent={0.75} title="bars & restaurants" />
-      <ProgressBar color="#ff612a" percent={0.87} title="lakes & bikes" />
-      <ProgressBar color="#ffffff" percent={1} title="awesome!" />
+      <VFlex>
+        <TitleDiv>
+          UPTOWN
+        </TitleDiv>
+        <SubtitleDiv>
+          THE LYN-LAKE LYFESTYLE
+        </SubtitleDiv>
+        <ProgressBar color="#00ffcc" percent={0.5} title="shopping" />
+        <ProgressBar color="#ff00ff" percent={0.63} title="arts & entertainment" />
+        <ProgressBar color="#fffa61" percent={0.75} title="bars & restaurants" />
+        <ProgressBar color="#ff612a" percent={0.87} title="lakes & bikes" />
+        <ProgressBar color="#ffffff" percent={1} title="awesome!" />
+      </VFlex>
     </SectionImageDiv>
     <SectionImageDiv image={require('../static/images/home-background-section3.jpg')}>
-      <TitleDiv>
-        THE VIEW FROM THE LIME TERRACE
-      </TitleDiv>
-      <SubtitleDiv>
-        DOWNTOWN MINNEAPOLIS
-      </SubtitleDiv>
+      <VFlex>
+        <TitleDiv>
+          THE VIEW FROM THE LIME TERRACE
+        </TitleDiv>
+        <SubtitleDiv>
+          DOWNTOWN MINNEAPOLIS
+        </SubtitleDiv>
+      </VFlex>
     </SectionImageDiv>
     <BlackStriped>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <VFlex>
         <TitleDiv>
           PUCKER UP
         </TitleDiv>
@@ -191,8 +164,7 @@ export default () => (
         <WhiteButton to="/contact">
           Schedule an appointment
         </WhiteButton>
-      </div>
-      <div style={{ height: 100 }} />
+      </VFlex>
     </BlackStriped>
     <Footer />
   </>
