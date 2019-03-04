@@ -13,10 +13,10 @@ export const SubtitleDiv = styled.div`
   padding-bottom: 20px;
 `;
 
-export const SectionImageDiv = styled.div<{ image: string}>`
+export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
   background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
+    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.3 : props.overlayOpacity}),
+    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.3 : props.overlayOpacity})
   ), url(${props => props.image});
   background-size: cover;
   background-position: bottom;
