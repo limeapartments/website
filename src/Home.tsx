@@ -7,6 +7,7 @@ import MouseoverLink from './components/MouseoverLink';
 import ImageGrid from './components/ImageGrid';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
+import WhiteButton from './components/WhiteButton';
 const BlackStripes = require('../static/images/blackstripes.jpg');
 
 const BlackStriped = styled.div`
@@ -187,25 +188,9 @@ export default () => (
             Scope out our <GreenLink to="/gallery">gallery</GreenLink> for some more eye-candy, then <GreenLink to="/contact">contact us</GreenLink> to find out more.
           </p>
         </div>
-        <Link
-          to="/contact"
-          style={{
-            backgroundColor: 'white',
-            borderRadius: 20,
-            paddingLeft: 16,
-            paddingRight: 16,
-            paddingTop: 8,
-            paddingBottom: 8,
-            margin: 8,
-            fontFamily: 'Poppins',
-            fontWeight: 600,
-            fontSize: 20,
-            color: 'black',
-            textDecoration: 'none'
-          }}
-        >
-          SCHEDULE AN APPOINTMENT
-        </Link>
+        <WhiteButton to="/contact">
+          Schedule an appointment
+        </WhiteButton>
       </div>
       <div style={{ height: 100 }} />
     </BlackStriped>
