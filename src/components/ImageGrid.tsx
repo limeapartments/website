@@ -3,7 +3,7 @@ import React from 'react';
 export default class ImageGrid extends React.Component<{
   data: {
     image: any,
-    text: string,
+    text?: string,
   }[]
 }> {
   render() {
