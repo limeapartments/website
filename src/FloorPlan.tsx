@@ -3,6 +3,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import BlackStriped from './components/BlackStriped';
 import { TitleDiv, HFlex, VFlex } from './components/Shared';
+import LinkedImage from './components/LinkedImage';
+import styled from 'styled-components';
+
+const TextDiv = styled.div`
+  text-align: center;
+  font-family: Open Sans, Muli;
+`;
 
 export default () => (
   <>
@@ -15,11 +22,11 @@ export default () => (
       </TitleDiv>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             A1
-          </div>
-          <img src={require('../static/images/A1.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/A1.pdf" src={require('../static/images/A1.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             541 Sq Ft
@@ -29,14 +36,14 @@ export default () => (
             Washer/Dryer
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             A2
-          </div>
-          <img src={require('../static/images/A2.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/A2.pdf" src={require('../static/images/A2.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             565-589 Sq Ft
@@ -48,14 +55,14 @@ export default () => (
             Splash Deck Views
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             A3
-          </div>
-          <img src={require('../static/images/A3.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/A3.pdf" src={require('../static/images/A3.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             595 Sq Ft
@@ -65,7 +72,7 @@ export default () => (
             Washer/Dryer
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
     </VFlex>
@@ -75,11 +82,11 @@ export default () => (
       </TitleDiv>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B1
-          </div>
-          <img src={require('../static/images/B1.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B1.pdf" src={require('../static/images/B1.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             721-727 Sq Ft
@@ -89,14 +96,14 @@ export default () => (
             Washer/Dryer
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B2
-          </div>
-          <img src={require('../static/images/B2.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B2.pdf" src={require('../static/images/B2.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             738-792 Sq Ft
@@ -106,14 +113,14 @@ export default () => (
             Washer/Dryer
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B3
-          </div>
-          <img src={require('../static/images/B3.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B3.pdf" src={require('../static/images/B3.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             701 Sq Ft
@@ -125,16 +132,16 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 2-5
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B4
-          </div>
-          <img src={require('../static/images/B4.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B4.pdf" src={require('../static/images/B4.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             749 Sq Ft
@@ -146,14 +153,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 2-5
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B5
-          </div>
-          <img src={require('../static/images/B5.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B5.pdf" src={require('../static/images/B5.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             753 Sq Ft
@@ -161,14 +168,14 @@ export default () => (
             Washer/Dryer
             <br />
             Available on level 2
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B6
-          </div>
-          <img src={require('../static/images/B6.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B6.pdf" src={require('../static/images/B6.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             820 Sq Ft
@@ -178,16 +185,16 @@ export default () => (
             Washer/Dryer
             <br />
             Available on levels 3-6
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B7
-          </div>
-          <img src={require('../static/images/B7.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B7.pdf" src={require('../static/images/B7.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             898 Sq Ft
@@ -199,14 +206,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on level 6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B8
-          </div>
-          <img src={require('../static/images/B8.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B8.pdf" src={require('../static/images/B8.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             846 Sq Ft
@@ -218,14 +225,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on level 5
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             B+Den
-          </div>
-          <img src={require('../static/images/B+.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/B+.pdf" src={require('../static/images/B+.png')} />
+          <TextDiv>
             One Bedroom, One Bath
             <br />
             Den
@@ -239,7 +246,7 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 2-5
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
     </VFlex>
@@ -249,11 +256,11 @@ export default () => (
       </TitleDiv>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C1
-          </div>
-          <img src={require('../static/images/C1.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C1.pdf" src={require('../static/images/C1.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1278 Sq Ft
@@ -265,14 +272,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 2-4
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C2
-          </div>
-          <img src={require('../static/images/C2.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C2.pdf" src={require('../static/images/C2.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1274 Sq Ft
@@ -284,14 +291,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 2-4
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C3
-          </div>
-          <img src={require('../static/images/C3.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C3.pdf" src={require('../static/images/C3.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1055 Sq Ft
@@ -303,14 +310,14 @@ export default () => (
             Downtown/Greenway views
             <br />
             Available on levels 3-4
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C4
-          </div>
-          <img src={require('../static/images/C4.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C4.pdf" src={require('../static/images/C4.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1209 Sq Ft
@@ -322,16 +329,16 @@ export default () => (
             Downtown/Lyndale Views
             <br />
             Available on levels 2-5
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C5
-          </div>
-          <img src={require('../static/images/C5.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C5.pdf" src={require('../static/images/C5.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1210 Sq Ft
@@ -345,14 +352,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on levels 3-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C6
-          </div>
-          <img src={require('../static/images/C6.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C6.pdf" src={require('../static/images/C6.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1094 Sq Ft
@@ -366,14 +373,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on levels 3-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C7
-          </div>
-          <img src={require('../static/images/C7.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C7.pdf" src={require('../static/images/C7.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1067 Sq Ft
@@ -385,14 +392,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C8
-          </div>
-          <img src={require('../static/images/C8.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C8.pdf" src={require('../static/images/C8.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1181 Sq Ft
@@ -404,16 +411,16 @@ export default () => (
             Walk-in Closets
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C9
-          </div>
-          <img src={require('../static/images/C9.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C9.pdf" src={require('../static/images/C9.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1093 Sq Ft
@@ -425,14 +432,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on levels 2-6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C10
-          </div>
-          <img src={require('../static/images/C10.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C10.pdf" src={require('../static/images/C10.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1141 Sq Ft
@@ -444,14 +451,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on level 6
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C11
-          </div>
-          <img src={require('../static/images/C11.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C11.pdf" src={require('../static/images/C11.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1001 Sq Ft
@@ -463,14 +470,14 @@ export default () => (
             Walk-in Closets
             <br />
             Available on level 5
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             C12
-          </div>
-          <img src={require('../static/images/C12.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/C12.pdf" src={require('../static/images/C12.png')} />
+          <TextDiv>
             Two Bedroom, Two Bath
             <br />
             1100 Sq Ft
@@ -482,7 +489,7 @@ export default () => (
             Walk-in Closets
             <br />
             Available on level 2
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
     </VFlex>
@@ -492,11 +499,11 @@ export default () => (
       </TitleDiv>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             D1
-          </div>
-          <img src={require('../static/images/D1.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/D1.pdf" src={require('../static/images/D1.png')} />
+          <TextDiv>
             Penthouse
             <br />
             Two Bedroom, Two Bath
@@ -510,14 +517,14 @@ export default () => (
             Walk-in Closets
             <br />
             Downtown/Greenway views
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             D2
-          </div>
-          <img src={require('../static/images/D2.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/D2.pdf" src={require('../static/images/D2.png')} />
+          <TextDiv>
             Penthouse
             <br />
             Two Bedroom, Two Bath
@@ -531,14 +538,14 @@ export default () => (
             Walk-in Closets
             <br />
             Downtown/Greenway views
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             D3
-          </div>
-          <img src={require('../static/images/D3.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/D3.pdf" src={require('../static/images/D3.png')} />
+          <TextDiv>
             Penthouse
             <br />
             Two Bedroom, Two Bath
@@ -550,14 +557,14 @@ export default () => (
             Washer/Dryer
             <br />
             Walk-in Closets
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             D4
-          </div>
-          <img src={require('../static/images/D4.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/D4.pdf" src={require('../static/images/D4.png')} />
+          <TextDiv>
             Penthouse
             <br />
             Two Bedroom, Two Bath
@@ -569,7 +576,7 @@ export default () => (
             Washer/Dryer
             <br />
             Walk-in Closets
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
     </VFlex>
@@ -579,11 +586,11 @@ export default () => (
       </TitleDiv>
       <HFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             E1
-          </div>
-          <img src={require('../static/images/E1.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/E1.pdf" src={require('../static/images/E1.png')} />
+          <TextDiv>
             1085 Sq Ft
             <br />
             Street Level Entry
@@ -593,14 +600,14 @@ export default () => (
             Lofted Bedroom & Storage
             <br />
             Washer/Dryer
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             E2
-          </div>
-          <img src={require('../static/images/E2.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/E2.pdf" src={require('../static/images/E2.png')} />
+          <TextDiv>
             1135 Sq Ft
             <br />
             Street Level Entry
@@ -610,14 +617,14 @@ export default () => (
             Lofted Bedroom & Storage
             <br />
             Washer/Dryer
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             E3
-          </div>
-          <img src={require('../static/images/E3.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/E3.pdf" src={require('../static/images/E3.png')} />
+          <TextDiv>
             1059 Sq Ft
             <br />
             Street Level Entry
@@ -627,14 +634,14 @@ export default () => (
             Lofted Bedroom & Storage
             <br />
             Washer/Dryer
-          </div>
+          </TextDiv>
         </VFlex>
         <VFlex>
-          <div>
+          <TextDiv>
             E4
-          </div>
-          <img src={require('../static/images/E4.png')} />
-          <div style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli' }}>
+          </TextDiv>
+          <LinkedImage link="/images/PDFFloorPlans/E4.pdf" src={require('../static/images/E4.png')} />
+          <TextDiv>
             1258 Sq Ft
             <br />
             Street Level Entry
@@ -644,7 +651,7 @@ export default () => (
             Lofted Bedroom & Storage
             <br />
             Washer/Dryer
-          </div>
+          </TextDiv>
         </VFlex>
       </HFlex>
     </VFlex>
