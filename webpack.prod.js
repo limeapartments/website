@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       { test: /\.tsx?$/, loader: 'babel-loader' },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(pdf|gif|png|jpe?g|svg)$/i,
         use: [
           'file-loader',
           {
