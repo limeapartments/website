@@ -22,7 +22,7 @@ export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: numb
   ), url(${props => props.image});
   background-size: cover;
   background-position: bottom;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
