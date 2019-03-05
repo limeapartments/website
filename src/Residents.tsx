@@ -18,7 +18,7 @@ export default () => (
         <SubtitleDiv>
           Package Tracking • Repair Requests • Amenity Reservations • Surveys • Special Offers • Events Calendar • Bulletin Board
         </SubtitleDiv>
-        <WhiteButton to="/elsewhere">
+        <WhiteButton to="/redirect?url=https%3A%2F%2Flime.mriresidentconnect.com">
           Access account
         </WhiteButton>
       </VFlex>
