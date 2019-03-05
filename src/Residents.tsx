@@ -31,7 +31,16 @@ export default () => (
         <SubtitleDiv style={{ color: 'black' }}>
           YOU'RE IN FOR A TREAT.
         </SubtitleDiv>
-        <p style={{ textAlign: 'center', fontFamily: 'Open Sans, Muli', fontSize: 18, fontWeight: 400, padding: 20 }}>
+        <p
+          style={{
+            textAlign: 'center',
+            fontFamily: 'Open Sans, Muli',
+            fontSize: 18,
+            fontWeight: 400,
+            padding: 20,
+            maxWidth: 900
+          }}
+        >
           We don’t call our properties vibrant communities for nothing. And we don’t offer empty promises of a luxury lifestyle. What we do is foster thriving societies where residents make strong connections that can last a lifetime—from business to friendships to (b)romance. And we’re looking for fun-loving residents to help make Lime the pride of Lyn Lake.
         </p>
       </VFlex>

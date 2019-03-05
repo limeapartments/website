@@ -12,6 +12,7 @@ export const SubtitleDiv = styled.div`
   font-size: 24px;
   padding-bottom: 20px;
   text-align: center;
+  max-width: 900px;
 `;
 
 export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
