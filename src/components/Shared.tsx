@@ -11,6 +11,7 @@ export const SubtitleDiv = styled.div`
   font-family: 'Sanchez';
   font-size: 24px;
   padding-bottom: 20px;
+  text-align: center;
 `;
 
 export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
