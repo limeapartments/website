@@ -44,7 +44,7 @@ module.exports = {
     compress: true,
     historyApiFallback: {
       rewrites: [
-        { from: /^\/[A-Za-z]+$/, to: '/index.html' }
+        { from: /^\/[A-Za-z\-]+$/, to: '/index.html' }
       ],
       index: 'index.html',
     },
