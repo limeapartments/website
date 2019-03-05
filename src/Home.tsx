@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
-import MouseoverLink from './components/MouseoverLink';
 import ImageGrid from './components/ImageGrid';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
@@ -18,7 +16,12 @@ const GreenLink = styled(Link)`
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/home-header1.jpg'),
+      require('../static/images/home-header2.jpg'),
+      require('../static/images/home-header3.jpg'),
+      require('../static/images/home-header4.jpg'),
+    ]} />
     <SectionImageDiv image={require('../static/images/home-background-section0.jpg')}>
       <VFlex>
         <TitleDiv>

@@ -13,7 +13,14 @@ const TextDiv = styled.div`
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/floor-plan-header1.jpg'),
+      require('../static/images/floor-plan-header2.jpg'),
+      require('../static/images/floor-plan-header3.jpg'),
+      require('../static/images/floor-plan-header4.jpg'),
+      require('../static/images/floor-plan-header5.jpg'),
+      require('../static/images/floor-plan-header6.jpg'),
+    ]} />
     <BlackStriped>
     </BlackStriped>
     <VFlex style={{ backgroundColor: 'white' }}>

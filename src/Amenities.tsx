@@ -7,7 +7,19 @@ import ImageGrid from './components/ImageGrid';
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/amenities-header1.jpg'),
+      require('../static/images/amenities-header2.jpg'),
+      require('../static/images/amenities-header3.jpg'),
+      require('../static/images/amenities-header4.jpg'),
+      require('../static/images/amenities-header5.jpg'),
+      require('../static/images/amenities-header6.jpg'),
+      require('../static/images/amenities-header7.jpg'),
+      require('../static/images/amenities-header8.jpg'),
+      require('../static/images/amenities-header9.jpg'),
+      require('../static/images/amenities-header10.jpg'),
+      require('../static/images/amenities-header11.jpg'),
+    ]} />
     <SectionImageDiv
       image={require('../static/images/amenities-yellow-background.jpg')}
       overlayOpacity={0}

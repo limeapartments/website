@@ -16,7 +16,15 @@ const ContentP = styled.p`
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/location-header1.jpg'),
+      require('../static/images/location-header2.jpg'),
+      require('../static/images/location-header3.jpg'),
+      require('../static/images/location-header4.jpg'),
+      require('../static/images/location-header5.jpg'),
+      require('../static/images/location-header6.jpg'),
+      require('../static/images/location-header7.jpg'),
+    ]} />
     <SectionImageDiv image={require('../static/images/location-blue-background.jpg')} overlayOpacity={0}>
       <VFlex>
         <TitleDiv>

@@ -9,7 +9,15 @@ import ImageGrid from './components/ImageGrid';
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/residents-header1.jpg'),
+      require('../static/images/residents-header2.jpg'),
+      require('../static/images/residents-header3.jpg'),
+      require('../static/images/residents-header4.jpg'),
+      require('../static/images/residents-header5.jpg'),
+      require('../static/images/residents-header6.jpg'),
+      require('../static/images/residents-header7.jpg'),
+    ]} />
     <BlackStriped>
       <VFlex>
         <TitleDiv>

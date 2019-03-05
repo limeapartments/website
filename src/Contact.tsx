@@ -5,7 +5,13 @@ import { VFlex } from './components/Shared';
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/contact-header1.jpg'),
+      require('../static/images/contact-header2.jpg'),
+      require('../static/images/contact-header3.jpg'),
+      require('../static/images/contact-header4.jpg'),
+      require('../static/images/contact-header5.jpg'),
+    ]} />
     <VFlex style={{ backgroundColor: 'white' }}>
       <div style={{ display: 'flex' }}>
         <iframe

@@ -7,7 +7,9 @@ import ImageGrid from './components/ImageGrid';
 
 export default () => (
   <>
-    <Header />
+    <Header images={[
+      require('../static/images/gallery-header1.jpg'),
+    ]} />
     <BlackStriped>
       <VFlex>
         <ImageGrid data={Array(18).fill(0).map((_, index) => {
