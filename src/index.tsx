@@ -8,6 +8,7 @@ import Residents from './Residents';
 import Gallery from './Gallery';
 import Experience from './Experience';
 import Contact from './Contact';
+import Location from './Location';
 
 Object.assign(document.body.style, {
   'margin': 'auto',
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/gallery" component={Gallery} />
       <Route path="/experience" component={Experience} />
       <Route path="/contact" component={Contact} />
+      <Route path="/location" component={Location} />
       <Route path="/redirect" component={(props: any): any => {
         const { url } = queryString.parse(props.location.search);
         window.location.replace(url as string);
