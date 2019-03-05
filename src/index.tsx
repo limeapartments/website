@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import queryString from 'query-string';
 import Home from './Home';
 import Amenities from './Amenities';
 import Residents from './Residents';
@@ -23,7 +24,11 @@ ReactDOM.render(
       <Route path="/gallery" component={Gallery} />
       <Route path="/experience" component={Experience} />
       <Route path="/contact" component={Contact} />
-      <Route path="/apply-now" component={(): any => { window.location.replace('https://www.rhris.com/applynow.cfm?siteID=26756A'); return null; }} />
+      <Route path="/redirect" component={(props: any): any => {
+        const { url } = queryString.parse(props.location.search);
+        window.location.replace(url as string);
+        return null;
+      }} />
     </>
   </Router>,
   document.getElementById('app')
