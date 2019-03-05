@@ -10,10 +10,7 @@ export default () => (
           src="https://player.vimeo.com/video/122110529?color=ffffff&title=0&byline=0&portrait=0"
           width="1165"
           height="498"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
+          frameBorder="0"
         />
       </div>
     <Footer />
