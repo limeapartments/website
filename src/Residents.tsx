@@ -6,6 +6,7 @@ import { TitleDiv, SubtitleDiv, SectionImageDiv } from './components/Shared';
 import WhiteButton from './components/WhiteButton';
 import { VFlex } from './components/Shared';
 import ImageGrid from './components/ImageGrid';
+import CallNow from './components/CallNow';
 
 export default () => (
   <>
@@ -82,5 +83,6 @@ export default () => (
       </VFlex>
     </BlackStriped>
     <Footer />
+    <CallNow />
   </>
 );

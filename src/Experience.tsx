@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CallNow from './components/CallNow';
 
 export default () => (
   <>
@@ -16,5 +17,6 @@ export default () => (
         />
       </div>
     <Footer />
+    <CallNow />
   </>
 );

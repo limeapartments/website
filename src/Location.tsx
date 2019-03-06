@@ -6,6 +6,7 @@ import BlackStriped from './components/BlackStriped';
 import WhiteButton from './components/WhiteButton';
 import ImageGrid from './components/ImageGrid';
 import styled from 'styled-components';
+import CallNow from './components/CallNow';
 
 const ContentP = styled.p`
   max-width: 900px;
@@ -106,5 +107,6 @@ export default () => (
       </VFlex>
     </BlackStriped>
     <Footer />
+    <CallNow />
   </>
 );

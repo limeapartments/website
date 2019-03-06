@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import BlackStriped from './components/BlackStriped';
 import { VFlex } from './components/Shared';
 import ImageGrid from './components/ImageGrid';
+import CallNow from './components/CallNow';
 
 export default () => (
   <>
@@ -20,5 +21,6 @@ export default () => (
       </VFlex>
     </BlackStriped>
     <Footer />
+    <CallNow />
   </>
 );

@@ -8,6 +8,7 @@ import Header from './components/Header';
 import WhiteButton from './components/WhiteButton';
 import BlackStriped from './components/BlackStriped';
 import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex } from './components/Shared';
+import CallNow from './components/CallNow';
 
 const GreenLink = styled(Link)`
   color: #00ff22;
@@ -170,5 +171,6 @@ export default () => (
       </VFlex>
     </BlackStriped>
     <Footer />
+    <CallNow />
   </>
 );
