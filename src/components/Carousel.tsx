@@ -34,7 +34,7 @@ const ImageDiv = styled.div<{
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  z-index: ${props => -10 + (-1 * props.index)};
+  z-index: ${props => -50 + props.index};
   position: absolute;
   left: 0;
   width: 100%;

@@ -8,6 +8,7 @@ export default () => (
   <>
     <Header images={[
       require('../static/images/experience-header1.jpg'),
+      require('../static/images/experience-header2.jpg'),
     ]} />
     <VFlex>
       <div style={{ width: '90%', textAlign: 'center', padding: 20 }}>
