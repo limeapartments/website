@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+/**
+ * Title text
+ **/
 export const TitleDiv = styled.div`
   color: white;
   font-family: 'Amatic SC';
@@ -7,6 +10,9 @@ export const TitleDiv = styled.div`
   text-align: center;
 `;
 
+/**
+ * Subtitle text
+ **/
 export const SubtitleDiv = styled.div`
   color: white;
   font-family: 'Sanchez';
@@ -16,6 +22,9 @@ export const SubtitleDiv = styled.div`
   max-width: 900px;
 `;
 
+/**
+ * Div with background image and color overlay (light black)
+ **/
 export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
   background: linear-gradient(
     rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.3 : props.overlayOpacity}),
@@ -30,6 +39,9 @@ export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: numb
   align-items: center;
 `;
 
+/**
+ * Vertically centered divs
+ **/
 export const VFlex = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,6 +50,9 @@ export const VFlex = styled.div`
   padding-bottom: 40px;
 `;
 
+/**
+ * Horizontally centered divs that wrap on line end
+ **/
 export const HFlex = styled.div`
   display: flex;
   justify-content: center;
