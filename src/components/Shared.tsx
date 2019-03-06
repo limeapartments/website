@@ -4,6 +4,7 @@ export const TitleDiv = styled.div`
   color: white;
   font-family: 'Amatic SC';
   font-size: 50px;
+  text-align: center;
 `;
 
 export const SubtitleDiv = styled.div`
@@ -44,4 +45,5 @@ export const HFlex = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
+  flex-wrap: wrap;
 `;

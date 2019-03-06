@@ -31,6 +31,14 @@ const Background = styled.div`
   padding: 20px;
 `;
 
+const CallNowSpacer = styled.div`
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+    height: 60px;
+  }
+`;
+
 export default () => (
   <Background>
     <div
@@ -43,7 +51,7 @@ export default () => (
     </div>
     <div style={{ height: 2, width: 300, backgroundColor: 'rgba(191, 55, 145, 1)'}} />
     <img style={{ height: 40 }} src={require('../../static/images/lime-logo.png')} />
-    <div style={{ width: '80%', display: 'flex', justifyContent: 'space-around' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
       <MouseoverLink to="/amenities" activeColor="black" inactiveColor="white" style={{ textTransform: 'none' }}>
         Amenities
       </MouseoverLink>
@@ -95,5 +103,6 @@ export default () => (
         </MouseoverA>
       </div>
     </div>
+    <CallNowSpacer />
   </Background>
 );

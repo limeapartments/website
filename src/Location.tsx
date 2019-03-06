@@ -36,7 +36,8 @@ export default () => (
           color: 'white',
           fontSize: 36,
           fontWeight: 600,
-          padding: 20
+          padding: 20,
+          textAlign: 'center'
         }}>
         Moving to minneapolis?
         </div>

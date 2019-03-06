@@ -38,7 +38,8 @@ export default class Header extends React.Component<{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-around',
-              paddingHorizontal: 200
+              paddingHorizontal: 200,
+              flexWrap: 'wrap'
             }}>
               <MouseoverLink
                 to="/amenities"
