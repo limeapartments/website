@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from './Carousel';
 import MouseoverLink from './MouseoverLink';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 const TitleDiv = styled.div`
@@ -10,9 +11,28 @@ const TitleDiv = styled.div`
   padding-top: 100px;
 `;
 
-export default class Header extends React.Component<{
-  images: any[]
-}> {
+interface Props {
+  images: any[],
+  history: any,
+  location: {
+    pathname: string,
+    search: string,
+    hash: string,
+    state: any
+  },
+  match: any
+}
+
+class Header extends React.Component<Props> {
+  colorsForPath = (path: string) => {
+    const { pathname } = this.props.location;
+    const isPathActive = pathname.indexOf(path) >= 0;
+    return {
+      activeColor: isPathActive ? 'white' : 'black',
+      inactiveColor: isPathActive ? 'black' : 'white'
+    };
+  };
+
   render() {
     return (
       <div style={{ height: 500, width: '100%', }}>
@@ -43,50 +63,43 @@ export default class Header extends React.Component<{
             }}>
               <MouseoverLink
                 to="/amenities"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/amenities')}
               >
                 Amenities
               </MouseoverLink>
               <MouseoverLink
                 to="/experience"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/experience')}
               >
                 Experience
               </MouseoverLink>
               <MouseoverLink
                 to="/location"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/location')}
               >
                 Location
               </MouseoverLink>
               <MouseoverLink
                 to="/floor-plans"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/floor-plans')}
               >
                 Floor Plans
               </MouseoverLink>
               <MouseoverLink
                 to="/gallery"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/gallery')}
               >
                 Gallery
               </MouseoverLink>
               <MouseoverLink
                 to="/residents"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/residents')}
               >
                 Residents
               </MouseoverLink>
               <MouseoverLink
                 to="/contact"
-                activeColor="black"
-                inactiveColor="white"
+                { ...this.colorsForPath('/contact')}
               >
                 Contact
               </MouseoverLink>
@@ -104,3 +117,5 @@ export default class Header extends React.Component<{
     );
   }
 }
+
+export default withRouter<Props>(Header);
