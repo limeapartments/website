@@ -36,7 +36,6 @@ export const VFlex = styled.div`
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 100%;
 `;
 
 export const HFlex = styled.div`

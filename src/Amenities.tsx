@@ -30,7 +30,7 @@ export default () => (
           Morning, sunshine
         </TitleDiv>
         <div style={{ display: 'flex', flexWrap: 'wrap', padding: 30 }}>
-          <div style={{ fontSize: 18, fontFamily: 'Open Sans, Muli', padding: 30 }}>
+          <div style={{ flex: 1, fontSize: 18, fontFamily: 'Open Sans, Muli', padding: 30 }}>
             <p>
               Time to recharge in the spacious, open <strong>floor plan</strong> of a pet-friendly Lime apartment.
             </p>
@@ -45,7 +45,7 @@ export default () => (
             style={{
               border: 'none',
               marginRight: 12,
-              width: '80%',
+              flex: 1,
               height: 600
             }}
             src="https://guestcard.ltsolutions.com/contactus.aspx?campaign=Lime005@myLTSMail.com&amp;csslink=https://gistcdn.githack.com/JChanceHud/ddf6c54f0340a1d3a731816222feb386/raw/4df49d20c43e5657eee923f59f3b49d0e84313a6/ContactUs2.css&amp;comments=text"
