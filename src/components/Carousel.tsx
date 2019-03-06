@@ -44,6 +44,7 @@ const ImageDiv = styled.div<{
   animation-duration: 2s;
   animation-delay: 3s;
   animation-timing: linear;
+  animation-fill-mode: forwards;
 `;
 
 export default class Carousel extends React.Component<{
