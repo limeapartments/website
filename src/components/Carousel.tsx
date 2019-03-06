@@ -68,7 +68,7 @@ export default class Carousel extends React.Component<{
       this.setState({
         imageIndex: this.nextImageIndex()
       });
-    }, 5000);
+    }, 6000);
   }
 
   componentWillUnmount() {
