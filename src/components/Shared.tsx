@@ -31,7 +31,7 @@ export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: numb
     rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity})
   ), url(${props => props.image});
   background-size: cover;
-  background-position: bottom;
+  background-position: left 0px top 50%;
   min-height: 600px;
   width: 100%;
   display: flex;
