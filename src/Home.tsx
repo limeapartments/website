@@ -40,40 +40,42 @@ export default () => (
         <SubtitleDiv>
           A LITTLE TART. A LITTLE TANGY. NEVER BORING.
         </SubtitleDiv>
-        <ImageGrid data={[
-          {
-            image: require('../static/images/home-grid1.jpg'),
-            text: 'Steamy Sauna',
-          },
-          {
-            image: require('../static/images/home-grid2.jpg'),
-            text: 'Midtown Greenway',
-          },
-          {
-            image: require('../static/images/home-grid3.jpg'),
-            text: 'Gym-quality Fitness',
-          },
-          {
-            image: require('../static/images/home-grid4.jpg'),
-            text: 'Fun Events',
-          },
-          {
-            image: require('../static/images/home-grid5.jpg'),
-            text: 'Pool Anyone?',
-          },
-          {
-            image: require('../static/images/home-grid6.jpg'),
-            text: 'We Love Our Pups',
-          },
-          {
-            image: require('../static/images/home-grid7.jpg'),
-            text: 'Splash Deck',
-          },
-          {
-            image: require('../static/images/home-grid8.jpg'),
-            text: 'Outdoor Spaces',
-          },
-        ]} />
+        <ImageGrid
+          data={[
+            {
+              image: require('../static/images/home-grid1.jpg'),
+              text: 'Steamy Sauna',
+            },
+            {
+              image: require('../static/images/home-grid2.jpg'),
+              text: 'Midtown Greenway',
+            },
+            {
+              image: require('../static/images/home-grid3.jpg'),
+              text: 'Gym-quality Fitness',
+            },
+            {
+              image: require('../static/images/home-grid4.jpg'),
+              text: 'Fun Events',
+            },
+            {
+              image: require('../static/images/home-grid5.jpg'),
+              text: 'Pool Anyone?',
+            },
+            {
+              image: require('../static/images/home-grid6.jpg'),
+              text: 'We Love Our Pups',
+            },
+            {
+              image: require('../static/images/home-grid7.jpg'),
+              text: 'Splash Deck',
+            },
+            {
+              image: require('../static/images/home-grid8.jpg'),
+              text: 'Outdoor Spaces',
+            },
+          ]}
+        />
       </VFlex>
     </BlackStriped>
     <SectionImageDiv image={require('../static/images/home-background-section1.jpg')}>

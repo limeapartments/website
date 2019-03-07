@@ -9,10 +9,11 @@ export default () => (
   <>
     <Header images={[
       require('../static/images/gallery-header1.jpg'),
+      require('../static/images/gallery-header2.jpg'),
     ]} />
     <BlackStriped>
       <VFlex>
-        <ImageGrid data={Array(18).fill(0).map((_, index) => {
+        <ImageGrid imagesPerLine={3} data={Array(18).fill(0).map((_, index) => {
           return {
             image: require(`../static/images/gallery-grid${index+1}.jpg`),
           };
