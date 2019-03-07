@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import BlackStriped from './components/BlackStriped';
-import { TitleDiv, HFlex, VFlex } from './components/Shared';
+import { TitleDiv, HFlex, VFlex, BlackStriped } from './components/Shared';
 import LinkedImage from './components/LinkedImage';
 import styled from 'styled-components';
 import CallNow from './components/CallNow';

@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex } from './components/Shared';
-import BlackStriped from './components/BlackStriped';
+import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex, BlackStriped } from './components/Shared';
 import ImageGrid from './components/ImageGrid';
 import CallNow from './components/CallNow';
 

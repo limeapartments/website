@@ -1,9 +1,18 @@
 import styled from 'styled-components';
 
 /**
+ * The black striped background component
+ **/
+export const BlackStriped = styled.div`
+  background-image: url(${require('../../static/images/blackstripes.jpg')});
+  width: 100%;
+`;
+
+/**
  * Title text
  **/
 export const TitleDiv = styled.div`
+  margin-top: 50px;
   color: white;
   font-family: 'Amatic SC';
   font-size: 50px;

@@ -6,8 +6,7 @@ import ImageGrid from './components/ImageGrid';
 import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import WhiteButton from './components/WhiteButton';
-import BlackStriped from './components/BlackStriped';
-import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex } from './components/Shared';
+import { TitleDiv, SubtitleDiv, SectionImageDiv, VFlex, BlackStriped } from './components/Shared';
 import CallNow from './components/CallNow';
 
 const GreenLink = styled(Link)`

@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { SectionImageDiv, VFlex, TitleDiv } from './components/Shared';
-import BlackStriped from './components/BlackStriped';
+import { SectionImageDiv, VFlex, TitleDiv, BlackStriped } from './components/Shared';
 import WhiteButton from './components/WhiteButton';
 import ImageGrid from './components/ImageGrid';
 import styled from 'styled-components';

@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import BlackStriped from './components/BlackStriped';
-import { VFlex } from './components/Shared';
+import { VFlex, BlackStriped } from './components/Shared';
 import ImageGrid from './components/ImageGrid';
 import CallNow from './components/CallNow';
 
