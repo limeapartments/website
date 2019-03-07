@@ -6,13 +6,14 @@ import styled from 'styled-components';
 export const BlackStriped = styled.div`
   background-image: url(${require('../../static/images/blackstripes.jpg')});
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
 
 /**
  * Title text
  **/
 export const TitleDiv = styled.div`
-  margin-top: 50px;
   color: white;
   font-family: 'Amatic SC';
   font-size: 50px;
@@ -41,11 +42,13 @@ export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: numb
   ), url(${props => props.image});
   background-size: cover;
   background-position: left 0px top 50%;
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
 
 /**
