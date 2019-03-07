@@ -11,6 +11,19 @@ const TextDiv = styled.div`
   font-family: Open Sans, Muli;
 `;
 
+const GreenTitle = styled.div`
+  color: #a9ff70;
+  font-family: Sanchez;
+  font-size: 18pt;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const GreenSubtitle = styled.div`
+  font-family: Open Sans, Muli;
+  color: white;
+`;
+
 export default () => (
   <>
     <Header images={[
@@ -22,8 +35,52 @@ export default () => (
       require('../static/images/floor-plan-header6.jpg'),
     ]} />
     <BlackStriped>
+      <VFlex>
+        <HFlex style={{ maxWidth: 1000, padding: 0 }}>
+          <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
+            <GreenTitle onClick={() => document.getElementById('studioAlcoves').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            Studio Alcoves
+            </GreenTitle>
+            <GreenSubtitle>
+            An efficient use of space
+            </GreenSubtitle>
+          </VFlex>
+          <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
+            <GreenTitle onClick={() => document.getElementById('oneBedrooms').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            One Bedrooms
+            </GreenTitle>
+            <GreenSubtitle>
+            Private bedrooms, big closets
+            </GreenSubtitle>
+          </VFlex>
+          <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
+            <GreenTitle onClick={() => document.getElementById('twoBedrooms').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            Two Bedrooms
+            </GreenTitle>
+            <GreenSubtitle>
+            Share Lime and save
+            </GreenSubtitle>
+          </VFlex>
+          <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
+            <GreenTitle onClick={() => document.getElementById('penthouses').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            Penthouses
+            </GreenTitle>
+            <GreenSubtitle>
+            Great views inside and out
+            </GreenSubtitle>
+          </VFlex>
+          <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
+            <GreenTitle onClick={() => document.getElementById('loftedTownhomes').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            Lofted Townhomes
+            </GreenTitle>
+            <GreenSubtitle>
+            Lofted spaces with additional street access
+            </GreenSubtitle>
+          </VFlex>
+        </HFlex>
+      </VFlex>
     </BlackStriped>
-    <VFlex style={{ backgroundColor: 'white' }}>
+    <VFlex id="studioAlcoves" style={{ backgroundColor: 'white' }}>
       <TitleDiv style={{ color: 'black' }}>
         Studio alcoves
       </TitleDiv>
@@ -83,7 +140,7 @@ export default () => (
         </VFlex>
       </HFlex>
     </VFlex>
-    <VFlex style={{ backgroundColor: 'rgba(245, 245, 245, 1)' }}>
+    <VFlex id="oneBedrooms" style={{ backgroundColor: 'rgba(245, 245, 245, 1)' }}>
       <TitleDiv style={{ color: 'black' }}>
         One bedrooms
       </TitleDiv>
@@ -257,7 +314,7 @@ export default () => (
         </VFlex>
       </HFlex>
     </VFlex>
-    <VFlex style={{ backgroundColor: 'rgba(235, 235, 235, 1)' }}>
+    <VFlex id="twoBedrooms" style={{ backgroundColor: 'rgba(235, 235, 235, 1)' }}>
       <TitleDiv style={{ color: 'black' }}>
         Two bedrooms
       </TitleDiv>
@@ -500,7 +557,7 @@ export default () => (
         </VFlex>
       </HFlex>
     </VFlex>
-    <VFlex style={{ backgroundColor: 'rgba(223, 223, 223, 1)' }}>
+    <VFlex id="penthouses" style={{ backgroundColor: 'rgba(223, 223, 223, 1)' }}>
       <TitleDiv style={{ color: 'black' }}>
         Penthouses
       </TitleDiv>
@@ -587,7 +644,7 @@ export default () => (
         </VFlex>
       </HFlex>
     </VFlex>
-    <VFlex style={{ backgroundColor: 'rgba(217, 217, 217, 1)' }}>
+    <VFlex id="loftedTownhomes" style={{ backgroundColor: 'rgba(217, 217, 217, 1)' }}>
       <TitleDiv style={{ color: 'black' }}>
         Lofted townhomes
       </TitleDiv>
