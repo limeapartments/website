@@ -24,6 +24,10 @@ const GreenSubtitle = styled.div`
   color: white;
 `;
 
+const scrollToElement = (id: string) => {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 export default () => (
   <>
     <Header images={[
@@ -38,7 +42,7 @@ export default () => (
       <VFlex>
         <HFlex style={{ maxWidth: 1000, padding: 0 }}>
           <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
-            <GreenTitle onClick={() => document.getElementById('studioAlcoves').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            <GreenTitle onClick={() => scrollToElement('studioAlcoves') }>
             Studio Alcoves
             </GreenTitle>
             <GreenSubtitle>
@@ -46,7 +50,7 @@ export default () => (
             </GreenSubtitle>
           </VFlex>
           <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
-            <GreenTitle onClick={() => document.getElementById('oneBedrooms').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            <GreenTitle onClick={() => scrollToElement('oneBedrooms')}>
             One Bedrooms
             </GreenTitle>
             <GreenSubtitle>
@@ -54,7 +58,7 @@ export default () => (
             </GreenSubtitle>
           </VFlex>
           <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
-            <GreenTitle onClick={() => document.getElementById('twoBedrooms').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            <GreenTitle onClick={() => scrollToElement('twoBedrooms')}>
             Two Bedrooms
             </GreenTitle>
             <GreenSubtitle>
@@ -62,7 +66,7 @@ export default () => (
             </GreenSubtitle>
           </VFlex>
           <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
-            <GreenTitle onClick={() => document.getElementById('penthouses').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            <GreenTitle onClick={() => scrollToElement('penthouses')}>
             Penthouses
             </GreenTitle>
             <GreenSubtitle>
@@ -70,7 +74,7 @@ export default () => (
             </GreenSubtitle>
           </VFlex>
           <VFlex style={{ paddingLeft: 16, paddingRight: 16 }}>
-            <GreenTitle onClick={() => document.getElementById('loftedTownhomes').scrollIntoView({ behavior: 'smooth', block: 'start' }) }>
+            <GreenTitle onClick={() => scrollToElement('loftedTownhomes')}>
             Lofted Townhomes
             </GreenTitle>
             <GreenSubtitle>
