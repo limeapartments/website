@@ -57,58 +57,69 @@ class Header extends React.Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-around',
             flexWrap: 'wrap',
-            paddingTop: 8,
-            paddingBottom: 8
+            paddingTop: 16,
+            paddingBottom: 16
           }}>
-            <MouseoverLink
-              to="/amenities"
-              { ...this.colorsForPath('/amenities')}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-around',
+                flexWrap: 'wrap',
+                maxWidth: 1000
+              }}
             >
-              Amenities
-            </MouseoverLink>
-            <MouseoverLink
-              to="/experience"
-              { ...this.colorsForPath('/experience')}
-            >
-              Experience
-            </MouseoverLink>
-            <MouseoverLink
-              to="/location"
-              { ...this.colorsForPath('/location')}
-            >
-              Location
-            </MouseoverLink>
-            <MouseoverLink
-              to="/floor-plans"
-              { ...this.colorsForPath('/floor-plans')}
-            >
-              Floor Plans
-            </MouseoverLink>
-            <MouseoverLink
-              to="/gallery"
-              { ...this.colorsForPath('/gallery')}
-            >
-              Gallery
-            </MouseoverLink>
-            <MouseoverLink
-              to="/residents"
-              { ...this.colorsForPath('/residents')}
-            >
-              Residents
-            </MouseoverLink>
-            <MouseoverLink
-              to="/contact"
-              { ...this.colorsForPath('/contact')}
-            >
-              Contact
-            </MouseoverLink>
-            <MouseoverLink
-              to="/redirect?url=https%3A%2F%2Fwww.rhris.com%2Fapplynow.cfm%3FsiteID%3D26756A"
-              activeColor="black"
-              inactiveColor="white"
-            >
-              Apply Now
-            </MouseoverLink>
+              <MouseoverLink
+                to="/amenities"
+                { ...this.colorsForPath('/amenities')}
+              >
+                Amenities
+              </MouseoverLink>
+              <MouseoverLink
+                to="/experience"
+                { ...this.colorsForPath('/experience')}
+              >
+                Experience
+              </MouseoverLink>
+              <MouseoverLink
+                to="/location"
+                { ...this.colorsForPath('/location')}
+              >
+                Location
+              </MouseoverLink>
+              <MouseoverLink
+                to="/floor-plans"
+                { ...this.colorsForPath('/floor-plans')}
+              >
+                Floor Plans
+              </MouseoverLink>
+              <MouseoverLink
+                to="/gallery"
+                { ...this.colorsForPath('/gallery')}
+              >
+                Gallery
+              </MouseoverLink>
+              <MouseoverLink
+                to="/residents"
+                { ...this.colorsForPath('/residents')}
+              >
+                Residents
+              </MouseoverLink>
+              <MouseoverLink
+                to="/contact"
+                { ...this.colorsForPath('/contact')}
+              >
+                Contact
+              </MouseoverLink>
+              <MouseoverLink
+                to="/redirect?url=https%3A%2F%2Fwww.rhris.com%2Fapplynow.cfm%3FsiteID%3D26756A"
+                activeColor="black"
+                inactiveColor="white"
+              >
+                Apply Now
+              </MouseoverLink>
+            </div>
           </div>
         </div>
       </Carousel>
