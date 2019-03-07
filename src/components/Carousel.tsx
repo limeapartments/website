@@ -32,7 +32,7 @@ const ImageDiv = styled.div<{
 }>`
   background-image: url(${props => props.image});
   background-size: cover;
-  background-position: bottom;
+  background-position: left 0px top 50%;
   background-repeat: no-repeat;
   z-index: ${props => -50 + props.index};
   position: absolute;
@@ -84,7 +84,7 @@ export default class Carousel extends React.Component<{
           position: 'relative',
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.3)'
+          backgroundColor: 'rgba(0, 0, 0, 0.1)'
         }}>
           {this.props.images.map((image: any, index: number) => (
             <ImageDiv

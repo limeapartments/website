@@ -42,7 +42,7 @@ class Header extends React.Component<Props> {
               <a href="https://limeapartments.com">
                 <img style={{ marginTop: 60 }} src={require('../../static/images/lime-logo.png')} />
               </a>
-              <TitleDiv style={{ marginBottom: 50, paddingTop: 20 }}>
+              <TitleDiv style={{ marginBottom: 100, paddingTop: 20 }}>
                 REFRESHING APARTMENTS
               </TitleDiv>
             </div>
