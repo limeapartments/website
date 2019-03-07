@@ -27,8 +27,8 @@ export const SubtitleDiv = styled.div`
  **/
 export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
   background: linear-gradient(
-    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.3 : props.overlayOpacity}),
-    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.3 : props.overlayOpacity})
+    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity}),
+    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity})
   ), url(${props => props.image});
   background-size: cover;
   background-position: bottom;
