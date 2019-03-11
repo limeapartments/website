@@ -37,19 +37,17 @@ export default () => (
             <p>
               Office Hours
             </p>
-            <p>
-              <ul>
-                <li>
-                  Monday — Friday: 9:00am – 6:00pm
-                </li>
-                <li>
-                  Saturday: 10:00am – 5:00pm
-                </li>
-                <li>
-                  Sunday: Closed
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                Monday — Friday: 9:00am – 6:00pm
+              </li>
+              <li>
+                Saturday: 10:00am – 5:00pm
+              </li>
+              <li>
+                Sunday: Closed
+              </li>
+            </ul>
           </div>
           <iframe
             style={{
