@@ -73,7 +73,7 @@ export default () => (
       <MouseoverLink to="/contact" activeColor="black" inactiveColor="white" style={{ textTransform: 'none' }}>
         Contact
       </MouseoverLink>
-      <MouseoverLink to="/apply-now" activeColor="black" inactiveColor="white" style={{ textTransform: 'none' }}>
+      <MouseoverLink to="/redirect?url=https%3A%2F%2Fwww.rhris.com%2Fapplynow.cfm%3FsiteID%3D26756A" activeColor="black" inactiveColor="white" style={{ textTransform: 'none' }}>
         Apply Now
       </MouseoverLink>
     </div>
