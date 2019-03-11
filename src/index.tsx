@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import queryString from 'query-string';
 import Home from './Home';
 import Amenities from './Amenities';
@@ -17,9 +17,24 @@ Object.assign(document.body.style, {
   'font-family': 'Helvetica',
 });
 
+class _ScrollToTop extends React.Component<{ location: any }> {
+  componentDidUpdate(prevProps: any) {
+    console.log(this.props);
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  render() {
+    return this.props.children;
+  }
+}
+
+const ScrollToTop = withRouter(props => <_ScrollToTop { ...props } />);
+
 ReactDOM.render(
   <Router>
-    <>
+    <ScrollToTop>
       <Route path="/" component={Home} exact />
       <Route path="/amenities" component={Amenities} />
       <Route path="/residents" component={Residents} />
@@ -33,7 +48,7 @@ ReactDOM.render(
         window.location.replace(url as string);
         return null;
       }} />
-    </>
+    </ScrollToTop>
   </Router>,
   document.getElementById('app')
 );
