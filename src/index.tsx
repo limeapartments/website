@@ -10,27 +10,13 @@ import Experience from './Experience';
 import Contact from './Contact';
 import Location from './Location';
 import FloorPlan from './FloorPlan';
+import ScrollToTop from './components/ScrollToTop';
 
 Object.assign(document.body.style, {
   'margin': 'auto',
   'background-color': 'hsl(220, 13%, 18%)',
   'font-family': 'Helvetica',
 });
-
-class _ScrollToTop extends React.Component<{ location: any }> {
-  componentDidUpdate(prevProps: any) {
-    console.log(this.props);
-    if (this.props.location.pathname !== prevProps.location.pathname) {
-      window.scrollTo(0, 0);
-    }
-  }
-
-  render() {
-    return this.props.children;
-  }
-}
-
-const ScrollToTop = withRouter(props => <_ScrollToTop { ...props } />);
 
 ReactDOM.render(
   <Router>
