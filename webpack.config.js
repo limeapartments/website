@@ -24,10 +24,10 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              disable: true
-            }
-          }
-        ]
+              disable: true,
+            },
+          },
+        ],
       },
     ],
   },
@@ -43,9 +43,7 @@ module.exports = {
     publicPath: '/',
     compress: true,
     historyApiFallback: {
-      rewrites: [
-        { from: /^\/[A-Za-z\-]+$/, to: '/index.html' }
-      ],
+      rewrites: [{ from: /^\/[A-Za-z-]+$/, to: '/index.html' }],
       index: 'index.html',
     },
   },
