@@ -42,13 +42,33 @@ module.exports = {
       favicon: 'static/images/favicon.ico',
     }),
     new CopyPlugin([
-      { from: 'static/redirect.ejs', to: 'amenities', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'experience', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'location', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'floor-plans', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'gallery', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'residents', toType: 'file' },
-      { from: 'static/redirect.ejs', to: 'contact', toType: 'file' },
+      {
+        from: 'static/redirect.ejs',
+        to: 'amenities/index.html',
+        toType: 'file',
+      },
+      {
+        from: 'static/redirect.ejs',
+        to: 'experience/index.html',
+        toType: 'file',
+      },
+      {
+        from: 'static/redirect.ejs',
+        to: 'location/index.html',
+        toType: 'file',
+      },
+      {
+        from: 'static/redirect.ejs',
+        to: 'floor-plans/index.html',
+        toType: 'file',
+      },
+      { from: 'static/redirect.ejs', to: 'gallery/index.html', toType: 'file' },
+      {
+        from: 'static/redirect.ejs',
+        to: 'residents/index.html',
+        toType: 'file',
+      },
+      { from: 'static/redirect.ejs', to: 'contact/index.html', toType: 'file' },
     ]),
   ],
 };
