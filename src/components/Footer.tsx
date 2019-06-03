@@ -160,7 +160,7 @@ export default () => (
           marginTop: 10,
         }}
       >
-        ©2018
+        ©2019
         <MouseoverA
           href="http://www.saturdayproperties.com/"
           target="_blank"
