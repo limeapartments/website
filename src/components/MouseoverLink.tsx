@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class MouseoverLink extends React.Component<{
-  activeColor: string,
-  inactiveColor: string,
-  to: string,
+  activeColor: string
+  inactiveColor: string
+  to: string
   style?: any
 }> {
   state = {
-    active: false
-  };
+    active: false,
+  }
   render() {
-    const { activeColor, inactiveColor, to } = this.props;
+    const { activeColor, inactiveColor, to } = this.props
     return (
       <Link
         to={to}
@@ -23,13 +23,13 @@ export default class MouseoverLink extends React.Component<{
           fontSize: 20,
           marginLeft: 4,
           marginRight: 4,
-          ...(this.props.style || {})
+          ...(this.props.style || {}),
         }}
         onMouseEnter={() => this.setState({ active: true })}
         onMouseLeave={() => this.setState({ active: false })}
       >
         {this.props.children}
       </Link>
-    );
+    )
   }
 }

@@ -1,15 +1,17 @@
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import CallNow from './components/CallNow';
-import { VFlex } from './components/Shared';
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import CallNow from './components/CallNow'
+import { VFlex } from './components/Shared'
 
 export default () => (
   <>
-    <Header images={[
-      require('../static/images/experience-header1.jpg'),
-      require('../static/images/experience-header2.jpg'),
-    ]} />
+    <Header
+      images={[
+        require('../static/images/experience-header1.jpg'),
+        require('../static/images/experience-header2.jpg'),
+      ]}
+    />
     <VFlex>
       <div style={{ width: '90%', textAlign: 'center', padding: 20 }}>
         <iframe
@@ -18,7 +20,7 @@ export default () => (
             width: '100%',
             maxWidth: 900,
             height: '40vw',
-            maxHeight: 400
+            maxHeight: 400,
           }}
           frameBorder="0"
         />
@@ -27,4 +29,4 @@ export default () => (
     <Footer />
     <CallNow />
   </>
-);
+)

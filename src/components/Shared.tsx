@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 /**
  * The black striped background component
@@ -8,7 +8,7 @@ export const BlackStriped = styled.div`
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-`;
+`
 
 /**
  * Title text
@@ -18,7 +18,7 @@ export const TitleDiv = styled.div`
   font-family: 'Amatic SC';
   font-size: 50px;
   text-align: center;
-`;
+`
 
 /**
  * Subtitle text
@@ -30,16 +30,32 @@ export const SubtitleDiv = styled.div`
   padding-bottom: 20px;
   text-align: center;
   max-width: 900px;
-`;
+`
 
 /**
  * Div with background image and color overlay (light black)
  **/
-export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: number }>`
+export const SectionImageDiv = styled.div<{
+  image: string
+  overlayOpacity?: number
+}>`
   background: linear-gradient(
-    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity}),
-    rgba(0, 0, 0, ${props => props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity})
-  ), url(${props => props.image});
+      rgba(
+        0,
+        0,
+        0,
+        ${(props) =>
+          props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity}
+      ),
+      rgba(
+        0,
+        0,
+        0,
+        ${(props) =>
+          props.overlayOpacity === undefined ? 0.1 : props.overlayOpacity}
+      )
+    ),
+    url(${(props) => props.image});
   background-size: cover;
   background-position: left 0px top 50%;
   min-height: 500px;
@@ -49,7 +65,7 @@ export const SectionImageDiv = styled.div<{ image: string, overlayOpacity?: numb
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-`;
+`
 
 /**
  * Vertically centered divs
@@ -60,7 +76,7 @@ export const VFlex = styled.div`
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-`;
+`
 
 /**
  * Horizontally centered divs that wrap on line end
@@ -72,4 +88,4 @@ export const HFlex = styled.div`
   padding-bottom: 40px;
   width: 100%;
   flex-wrap: wrap;
-`;
+`

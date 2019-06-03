@@ -1,65 +1,91 @@
-import React from 'react';
-import Carousel from './Carousel';
-import MouseoverLink from './MouseoverLink';
-import { withRouter } from 'react-router-dom';
-import styled from 'styled-components';
+import React from 'react'
+import Carousel from './Carousel'
+import MouseoverLink from './MouseoverLink'
+import { withRouter } from 'react-router-dom'
+import styled from 'styled-components'
 
 const TitleDiv = styled.div`
   color: white;
   font-family: 'Amatic SC';
   font-size: 50px;
   padding-top: 100px;
-`;
+`
 
 interface Props {
-  images: any[],
-  history: any,
+  images: any[]
+  history: any
   location: {
-    pathname: string,
-    search: string,
-    hash: string,
+    pathname: string
+    search: string
+    hash: string
     state: any
-  },
+  }
   match: any
 }
 
 class Header extends React.Component<Props> {
   colorsForPath = (path: string) => {
-    const { pathname } = this.props.location;
-    const isPathActive = pathname.indexOf(path) >= 0;
+    const { pathname } = this.props.location
+    const isPathActive = pathname.indexOf(path) >= 0
     return {
       activeColor: isPathActive ? 'white' : 'black',
-      inactiveColor: isPathActive ? 'black' : 'white'
-    };
-  };
+      inactiveColor: isPathActive ? 'black' : 'white',
+    }
+  }
 
   render() {
     return (
       <Carousel images={this.props.images}>
-        <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}>
-          <div style={{ height: '100%', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around'}}>
+        <div
+          style={{
+            height: '100%',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <div
+            style={{
+              height: '100%',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+            }}
+          >
             <div>
               <a href="https://limeapartments.com">
-                <img style={{ marginTop: 60 }} src={require('../../static/images/lime-logo.png')} />
+                <img
+                  style={{ marginTop: 60 }}
+                  src={require('../../static/images/lime-logo.png')}
+                />
               </a>
               <TitleDiv style={{ marginBottom: 100, paddingTop: 20 }}>
                 REFRESHING APARTMENTS
               </TitleDiv>
             </div>
-            <a style={{ marginTop: 8, marginBottom: 8 }} href="https://www.facebook.com/pages/Lime-Apartments/389529864487875?skip_nax_wizard=true">
+            <a
+              style={{ marginTop: 8, marginBottom: 8 }}
+              href="https://www.facebook.com/pages/Lime-Apartments/389529864487875?skip_nax_wizard=true"
+            >
               <img src={require('../../static/images/facebook-icon.png')} />
             </a>
           </div>
-          <div style={{
-            width: '100%',
-            backgroundColor: 'rgba(219, 63, 168, 0.7)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-around',
-            flexWrap: 'wrap',
-            paddingTop: 16,
-            paddingBottom: 16
-          }}>
+          <div
+            style={{
+              width: '100%',
+              backgroundColor: 'rgba(219, 63, 168, 0.7)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+              flexWrap: 'wrap',
+              paddingTop: 16,
+              paddingBottom: 16,
+            }}
+          >
             <div
               style={{
                 flex: 1,
@@ -67,49 +93,43 @@ class Header extends React.Component<Props> {
                 alignItems: 'center',
                 justifyContent: 'space-around',
                 flexWrap: 'wrap',
-                maxWidth: 1000
+                maxWidth: 1000,
               }}
             >
               <MouseoverLink
                 to="/amenities"
-                { ...this.colorsForPath('/amenities')}
+                {...this.colorsForPath('/amenities')}
               >
                 Amenities
               </MouseoverLink>
               <MouseoverLink
                 to="/experience"
-                { ...this.colorsForPath('/experience')}
+                {...this.colorsForPath('/experience')}
               >
                 Experience
               </MouseoverLink>
               <MouseoverLink
                 to="/location"
-                { ...this.colorsForPath('/location')}
+                {...this.colorsForPath('/location')}
               >
                 Location
               </MouseoverLink>
               <MouseoverLink
                 to="/floor-plans"
-                { ...this.colorsForPath('/floor-plans')}
+                {...this.colorsForPath('/floor-plans')}
               >
                 Floor Plans
               </MouseoverLink>
-              <MouseoverLink
-                to="/gallery"
-                { ...this.colorsForPath('/gallery')}
-              >
+              <MouseoverLink to="/gallery" {...this.colorsForPath('/gallery')}>
                 Gallery
               </MouseoverLink>
               <MouseoverLink
                 to="/residents"
-                { ...this.colorsForPath('/residents')}
+                {...this.colorsForPath('/residents')}
               >
                 Residents
               </MouseoverLink>
-              <MouseoverLink
-                to="/contact"
-                { ...this.colorsForPath('/contact')}
-              >
+              <MouseoverLink to="/contact" {...this.colorsForPath('/contact')}>
                 Contact
               </MouseoverLink>
               <MouseoverLink
@@ -123,8 +143,8 @@ class Header extends React.Component<Props> {
           </div>
         </div>
       </Carousel>
-    );
+    )
   }
 }
 
-export default withRouter<Props>(Header);
+export default withRouter<Props>(Header)

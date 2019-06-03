@@ -9,6 +9,7 @@
     "dev": "webpack-dev-server --config webpack.config.js",
     "build:production": "npm run clean && webpack --config webpack.prod.js",
     "now-build": "npm run build:production",
+    "lint": "eslint --fix ./src/*.tsx ./src/*/*.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,19 +23,8 @@
   },
   "homepage": "https://github.com/limeapartments/website#readme",
   "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "extraFileExtensions": [
-        ".tsx"
-      ],
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "useJSXTextNode": true,
-      "project": "./tsconfig.json"
-    },
     "extends": [
-      "@jchancehud/eslint-config"
+      "@jchancehud/eslint-config-typescript"
     ]
   },
   "dependencies": {
@@ -49,6 +39,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@jchancehud/eslint-config": "0.0.8",
+    "@jchancehud/eslint-config-typescript": "0.0.5",
     "@types/query-string": "^6.2.0",
     "@types/react": "^16.8.5",
     "@types/react-dom": "^16.8.2",

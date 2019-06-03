@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default class WhiteButton extends React.Component<{ to: string, style?: any }> {
+export default class WhiteButton extends React.Component<{
+  to: string
+  style?: any
+}> {
   render() {
     return (
       <Link
@@ -20,11 +23,11 @@ export default class WhiteButton extends React.Component<{ to: string, style?: a
           color: 'black',
           textDecoration: 'none',
           textTransform: 'uppercase',
-          ...(this.props.style || {})
+          ...(this.props.style || {}),
         }}
       >
         {this.props.children}
       </Link>
-    );
+    )
   }
 }
