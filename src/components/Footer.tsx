@@ -149,7 +149,7 @@ export default () => (
         }}
       >
         Lime Apartments | 2904 Lyndale Avenue South • Minneapolis, Minnesota
-        55408 | 855.246.1190 | refresh@limeapartments.com
+        55408 | 612.213.4138 | refresh@limeapartments.com
       </div>
       <div
         style={{
