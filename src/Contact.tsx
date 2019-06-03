@@ -32,7 +32,7 @@ export default () => (
               <br />
               2904 Lyndale Avenue • Minneapolis, MN 55408
               <br />
-              <strong>855.246.1190</strong>
+              <strong>612.213.4138</strong>
             </p>
             <p>
               Office Hours
