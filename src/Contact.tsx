@@ -17,7 +17,7 @@ export default () => (
     />
     <VFlex style={{ backgroundColor: 'white' }}>
       <HFlex>
-        <iframe
+      <!--  <iframe
           style={{
             border: 'none',
             marginRight: 12,
@@ -26,7 +26,7 @@ export default () => (
             height: 600,
           }}
           src="https://guestcard.ltsolutions.com/contactus.aspx?campaign=Lime005@myLTSMail.com&amp;csslink=https://gistcdn.githack.com/JChanceHud/ddf6c54f0340a1d3a731816222feb386/raw/4df49d20c43e5657eee923f59f3b49d0e84313a6/ContactUs2.css&amp;comments=text"
-        />
+        />-->
         <div>
           <div>
             <p>
