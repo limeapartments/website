@@ -139,6 +139,14 @@ class Header extends React.Component<Props> {
               >
                 Apply Now
               </MouseoverLink>
+              
+              <MouseoverLink
+                to="/redirect?url=https%3A%2F%2Fwww.rhris.com%2Fapplynow.cfm%3FsiteID%3D26756A"
+                activeColor="black"
+                inactiveColor="white"
+              >
+                Apply Now2
+              </MouseoverLink>
             </div>
           </div>
         </div>
