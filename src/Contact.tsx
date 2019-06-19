@@ -21,7 +21,6 @@ export default () => (
     <VFlex style={{ backgroundColor: 'white' }}>
 	  <HFlex>
 
-        
 
         <div>
           <div>
