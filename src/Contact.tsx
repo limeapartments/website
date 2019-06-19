@@ -16,12 +16,13 @@ export default () => (
       ]}
     />
     <VFlex style={{ backgroundColor: 'white' }}>
-      <HFlex>
+     <div> this is contact from</div>
+	  <HFlex>
 <<<<<<< HEAD
       <!--  <iframe
 =======
         
-        this is contact from
+       
         
         
          <!--<iframe
