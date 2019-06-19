@@ -25,7 +25,7 @@ export default () => (
         <div>
           <div>
             <p>
-              <strong>Lime Apartments  i need to check either its correct file</strong>
+              <strong>Lime Apartments</strong>
               <br />
               2904 Lyndale Avenue • Minneapolis, MN 55408
               <br />
