@@ -15,14 +15,17 @@ export default () => (
         require('../static/images/contact-header5.jpg'),
       ]}
     />
+    
+   
+    
     <VFlex style={{ backgroundColor: 'white' }}>
+      <div>this is contact from</div>
       <HFlex>
 <<<<<<< HEAD
       <!--  <iframe
 =======
         
-        this is contact from
-        
+             
         
          <!--<iframe
 >>>>>>> 40ab7338620c17234921f08ccb1696fdef5e08df
