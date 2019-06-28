@@ -15,45 +15,59 @@ export default () => (
         require('../static/images/contact-header5.jpg'),
       ]}
     />
-    
-   
-    
+
     <VFlex style={{ backgroundColor: 'white' }}>
-	  <HFlex>
-		
-		<div class="contactform">
-	
-		<div class="headertext">Contact Us</div>
-		
-		<form action="https://perfectwebsolutions.info/limecontactfromphp/index.php" method="get">
-            <div class="firstnamelabel">
-                First Name:</div>
+      <HFlex>
+        <div class="contactform">
+          <div class="headertext">Contact Us</div>
+
+          <form
+            action="https://perfectwebsolutions.info/limecontactfromphp/index.php"
+            method="get"
+          >
+            <div class="firstnamelabel">First Name:</div>
             <div class="firstnameinput">
-                <input name="txtFirstName" type="text" id="txtFirstName"></div>
-            <div class="lastnamelabel">
-                Last Name:</div>
-            <div class="lastnameinput">
-                <input name="txtLastName" type="text" id="txtLastName"></div>
-            <div class="phonenumberlabel">
-                Phone Number:</div>
-            <div class="phonenumberinput">
-                <input name="txtPhoneNumber" type="text" maxlength="13" id="txtPhoneNumber"><input type="hidden" name="hfPhoneNumber" id="hfPhoneNumber">
+              <input name="txtFirstName" type="text" id="txtFirstName" />
             </div>
-            <div class="emaillabel">
-                Email:</div>
+            <div class="lastnamelabel">Last Name:</div>
+            <div class="lastnameinput">
+              <input name="txtLastName" type="text" id="txtLastName" />
+            </div>
+            <div class="phonenumberlabel">Phone Number:</div>
+            <div class="phonenumberinput">
+              <input
+                name="txtPhoneNumber"
+                type="text"
+                maxlength="13"
+                id="txtPhoneNumber"
+              />
+              <input type="hidden" name="hfPhoneNumber" id="hfPhoneNumber" />
+            </div>
+            <div class="emaillabel">Email:</div>
             <div class="emailinput">
-                <input name="txtEmailAddress" type="text" id="txtEmailAddress"></div>
+              <input name="txtEmailAddress" type="text" id="txtEmailAddress" />
+            </div>
             <div id="divCommentsLabel" class="commentslabel">
-                Comments:</div>
+              Comments:
+            </div>
             <div id="divCommentsInput" class="commentsinput">
-                <textarea name="txtComments" rows="2" cols="20" id="txtComments"></textarea>
-				</div>            
+              <textarea
+                name="txtComments"
+                rows="2"
+                cols="20"
+                id="txtComments"
+              />
+            </div>
             <div class="contactus">
-                <input type="submit" name="btnContactUs" value="Contact Us" id="btnContactUs">
-				</div>
-		</form>
-		
-		</div>
+              <input
+                type="submit"
+                name="btnContactUs"
+                value="Contact Us"
+                id="btnContactUs"
+              />
+            </div>
+          </form>
+        </div>
 
         <div>
           <div>
