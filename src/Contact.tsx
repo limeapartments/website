@@ -22,7 +22,7 @@ export default () => (
           <div class="headertext">Contact Us</div>
 
           <form
-            action="https://perfectwebsolutions.info/limecontactfromphp/index.php"
+            action="http://contact.limeapartments.com/index.php"
             method="get"
           >
             <div class="firstnamelabel">First Name:</div>
