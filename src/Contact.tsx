@@ -21,10 +21,7 @@ export default () => (
         <div class="contactform">
           <div class="headertext">Contact Us</div>
 
-          <form
-            action="http://contact.limeapartments.com/index.php"
-            method="get"
-          >
+          <form action="https://contact.limeapartments.com/send" method="post">
             <div class="firstnamelabel">First Name:</div>
             <div class="firstnameinput">
               <input name="txtFirstName" type="text" id="txtFirstName" />
