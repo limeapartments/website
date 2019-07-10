@@ -113,7 +113,7 @@ export default class Contact extends React.Component<{}> {
                         return
                       }
                       await axios.post(
-                        'https://emailer.limeapartments1.now.sh/send',
+                        'https://contactform.limeapartments1.now.sh/send',
                         this.state
                       )
                       this.setState({
