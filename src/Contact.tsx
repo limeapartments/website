@@ -13,6 +13,33 @@ export default class Contact extends React.Component<{}> {
     email: '',
     comments: '',
   }
+
+  submitForm = async () => {
+    const { firstname, lastname, email, phone, comments } = this.state
+    try {
+      if (!firstname || !lastname || !email || !phone || !comments) {
+        alert('Please fill out all the fields before submitting')
+        return
+      }
+      await axios.post(
+        'https://contactform.limeapartments1.now.sh/send',
+        this.state
+      )
+      this.setState(
+        {
+          firstname: '',
+          lastname: '',
+          email: '',
+          phone: '',
+          comments: '',
+        },
+        () => alert("Your information has been sent, we'll be in touch soon!")
+      )
+    } catch (err) {
+      alert('There was a problem sending your information. Please try again.')
+    }
+  }
+
   render() {
     return (
       <>
@@ -98,40 +125,7 @@ export default class Contact extends React.Component<{}> {
                 <input
                   type="submit"
                   value="Contact Us"
-                  onClick={async () => {
-                    try {
-                      if (
-                        !this.state.firstname ||
-                        !this.state.lastname ||
-                        !this.state.email ||
-                        !this.state.phone ||
-                        !this.state.comments
-                      ) {
-                        alert(
-                          'Please fill out all the fields before submitting'
-                        )
-                        return
-                      }
-                      await axios.post(
-                        'https://contactform.limeapartments1.now.sh/send',
-                        this.state
-                      )
-                      this.setState({
-                        firstname: '',
-                        lastname: '',
-                        email: '',
-                        phone: '',
-                        comments: '',
-                      })
-                      alert(
-                        "Your information has been sent, we'll be in touch soon!"
-                      )
-                    } catch (err) {
-                      alert(
-                        'There was a problem sending your information. Please try again.'
-                      )
-                    }
-                  }}
+                  onClick={this.submitForm}
                 />
               </div>
             </div>

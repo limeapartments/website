@@ -14,6 +14,7 @@ import {
   BlackStriped,
 } from './components/Shared'
 import CallNow from './components/CallNow'
+import ContactForm from './components/ContactForm'
 
 const GreenLink = styled(Link)`
   color: #00ff22;
@@ -122,20 +123,16 @@ export default () => (
             justifyContent: 'center',
           }}
         >
-          <iframe
+          <ContactForm
             style={{
-              border: 'none',
               marginLeft: 12,
               marginRight: 12,
               flex: 1,
-              maxWidth: 500,
+              maxWidth: 50,
               height: 600,
             }}
-            src="https://guestcard.ltsolutions.com/contactus.aspx?campaign=Lime005@myLTSMail.com&amp;csslink=https://gistcdn.githack.com/JChanceHud/17cb194ba9ae69814b6f5d5369bacf48/raw/024e7f82a9b07da68e6f5d3f31b6d1122de7685b/ContactUs.css&amp;comments=text"
           />
-          
-          i am here
-          
+
           <iframe
             style={{
               flex: 1,
